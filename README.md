@@ -1,4 +1,4 @@
-## Specifically for extensibility:
+## Extensibility:
 
 - The search functionality uses a predicate builder pattern, making it easy to add new filters
 - The sorting mechanism is designed to accommodate new sort fields and orders
