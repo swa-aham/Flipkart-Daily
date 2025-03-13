@@ -6,7 +6,7 @@
 - The repository layer abstracts data storage, making it easy to switch to a real database later
 
 ### Structure
-
+```
 swa-aham-flipkart-daily/
 ├── README.md
 ├── mvnw
@@ -42,3 +42,4 @@ swa-aham-flipkart-daily/
 │   └── test/
 │       └── java/com/flipkart/daily/FlipkartDailyApplicationTests.java
 └── .mvn/wrapper/maven-wrapper.properties
+```
