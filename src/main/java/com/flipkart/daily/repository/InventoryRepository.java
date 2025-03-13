@@ -7,13 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 @Repository
 public class InventoryRepository {
-    private final Map<String, InventoryItem> inventory = new HashMap<>();
+    private final Map<String, InventoryItem> inventory = new LinkedHashMap<>(); // Changed to LinkedHashMap
     private final ItemRepository itemRepository;
 
     @Autowired

@@ -5,14 +5,14 @@ import com.flipkart.daily.model.Item;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 @Repository
 public class ItemRepository {
     // Using a Map with composite key (brand+category) as key and Item as value for quick access
-    private final Map<String, Item> items = new HashMap<>();
+    private final Map<String, Item> items = new LinkedHashMap<>();
 
     public void addItem(Item item) {
         String key = generateKey(item.getBrand(), item.getCategory());

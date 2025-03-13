@@ -33,6 +33,10 @@ public class DemoRunner implements CommandLineRunner {
         inventoryService.addItem("Amul", "Curd", 50);
         inventoryService.addItem("Nestle", "Milk", 60);
         inventoryService.addItem("Nestle", "Curd", 90);
+        inventoryService.addItem("Britannia", "Bread", 40);
+        inventoryService.addItem("Britannia", "Butter", 120);
+        inventoryService.addItem("Mother Dairy", "Milk", 80);
+        inventoryService.addItem("Mother Dairy", "Cheese", 150);
 
         // Add inventory
         System.out.println("Adding inventory...");
@@ -41,6 +45,10 @@ public class DemoRunner implements CommandLineRunner {
         inventoryService.addInventory("Nestle", "Curd", 10);
         inventoryService.addInventory("Amul", "Milk", 10);
         inventoryService.addInventory("Amul", "Curd", 5);
+        inventoryService.addInventory("Britannia", "Bread", 20);
+        inventoryService.addInventory("Britannia", "Butter", 15);
+        inventoryService.addInventory("Mother Dairy", "Milk", 25);
+        inventoryService.addInventory("Mother Dairy", "Cheese", 10);
 
         // Print all inventory
         System.out.println("Inventory:");
